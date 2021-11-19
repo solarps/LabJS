@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.mobile-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    z-index: 0;
+    text-align: center;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+.menu {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    transform: translateX(-300px);
+    width: 300px;
+    height: 100vh;
+    z-index: 3;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-overlay-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+    transition: all 0.5s ease-in-out;
+    display: block;
+}
