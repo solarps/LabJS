@@ -1,0 +1,12 @@
+#elastic {
+    display:block;
+    margin: 40px 0;
+}
+
+.elastic li{
+    transition: all ease 500ms;
+}
+
+.elastic li.hide{
+    display: none;
+}
