@@ -1,0 +1,67 @@
+button.addElement{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(44, 108, 128);
+    position: fixed;
+    bottom: 10mm;
+    right: 5mm; 
+}
+button.addElement::after{
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    height: 10px;
+    margin-top: -5px;
+    top: 50%;
+    left: 5px;
+    right: 5px;
+    z-index: 9;
+}
+button.addElement::before{
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    width: 10px;
+    margin-left: -5px;
+    left: 50%;
+    top: 5px;
+    bottom: 5px;
+    z-index: 9;
+}
+
+div.square {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 1mm solid black;
+    text-align: center;
+    position: absolute;
+}
+input.textField{
+    width: 140px;
+    height: 70px;
+}
+div.mainArea{
+    height: 700px;
+    width: 100%;
+    background-color: rgb(207, 235, 253);
+    border: 2mm solid black;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
